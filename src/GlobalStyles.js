@@ -1,8 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import DungGeunMo from "./fonts/DungGeunMo.woff";
 import reset from "styled-reset";
 
 const GlobalStyles = createGlobalStyle`
     ${reset}
+
+    @font-face {
+        font-family: "DungGeunMo";
+        src: local("DungGeunMo"),
+        url(${DungGeunMo}) format('woff');
+    }
+
     a {
         text-decoration: none;
         color: inherit;
@@ -11,9 +19,10 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         user-select: none;
     }
+
     body {
-        font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background-color: teal ;
+        font-family: "DungGeunMo";
     }
 `;
 
