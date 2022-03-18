@@ -1,12 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+import MiniHeader from "./MiniHeader";
 
-const Modal = ({ cancelModal }) => {
+const ModalContainer = styled.div`
+  background-color: rgba(15, 118, 110, 0.4);
+`;
+
+const Modal = ({ cancelModal, category }) => {
   return (
-    <div className="w-full h-screen p-20 bg-teal-700 opacity-50 absolute">
-      <div className=" bg-cyan-100 w-full h-full">
-        <button onClick={cancelModal}>나는 모달 끄기</button>
+    <ModalContainer className="w-full h-screen p-20 absolute">
+      <div className=" bg-white w-full h-full">
+        <MiniHeader cancelModal={cancelModal} category={category} />
       </div>
-    </div>
+    </ModalContainer>
   );
 };
 
