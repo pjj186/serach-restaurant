@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <>
       {modal ? <Modal cancelModal={cancelModal} category={category} /> : null}
-      <div className="w-full h-full p-6 space-y-3">
+      <div className="w-full h-full p-10 space-y-10">
         <div
           className="flex flex-col items-center w-10 cursor-pointer"
           onClick={() => {

@@ -1,5 +1,5 @@
 /*global kakao*/
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { AppContext } from "../App";
 
 const Location = () => {
@@ -37,7 +37,7 @@ const Location = () => {
           <div id="map" style={{ width: "500px", height: "400px" }}></div>
         </div>
       ) : (
-        <div>Loading</div>
+        <div>Loading..</div>
       )}
     </>
   );
