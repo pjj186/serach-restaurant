@@ -1,9 +1,18 @@
-function App() {
+import GlobalStyles from "./GlobalStyles";
+import Home from "./pages/Home";
+import { HashRouter, Route, Routes } from "react-router-dom";
+
+const App = () => {
   return (
-    <div className="App">
-      <span>Hello World</span>
-    </div>
+    <>
+      <GlobalStyles />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </HashRouter>
+    </>
   );
-}
+};
 
 export default App;
