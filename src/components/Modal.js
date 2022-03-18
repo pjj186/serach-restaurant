@@ -9,18 +9,22 @@ const ModalContainer = styled.div`
 
 const Modal = ({ cancelModal, category }) => {
   return (
-    <ModalContainer className="w-full h-screen p-20 absolute">
-      <div className=" bg-white w-full h-full">
+    <ModalContainer className="w-full h-screen p-20 absolute flex items-center justify-center">
+      <div className=" bg-neutral-200 w-1/2 h-full rounded-lg">
         <MiniHeader cancelModal={cancelModal} category={category} />
-        <div className="">
-          <p className=" text-3xl mb-3 text-center">
+        <div>
+          <p className=" text-3xl mt-3 mb-3 text-center">
             주변에 이런 식당들이 있어요!
           </p>
-          <div className="flex justify-center items-center border-8 border-solid">
+          <div className="flex justify-center items-center pb-10 border-b-2 border-dashed">
             <Location />
           </div>
         </div>
-        <div>식당 뽑기!</div>
+        <div className="flex items-center justify-center">
+          <span className="text-3xl border-2 border-solid mt-24 px-4 py-2 rounded-lg cursor-pointer shadow-lg hover:bg-slate-300">
+            식당 뽑기!
+          </span>
+        </div>
       </div>
     </ModalContainer>
   );

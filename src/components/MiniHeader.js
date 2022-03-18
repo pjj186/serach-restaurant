@@ -4,7 +4,7 @@ import { faXmarkCircle } from "@fortawesome/free-regular-svg-icons";
 
 const MiniHeader = ({ cancelModal, category }) => {
   return (
-    <div className="flex w-full h-6 bg-neutral-200 px-5 py-4 items-center justify-between">
+    <div className="flex w-full h-6 bg-neutral-400 px-5 py-4 items-center justify-between rounded-t-lg">
       <span className="font-bold">{category}</span>
       <FontAwesomeIcon
         icon={faXmarkCircle}
