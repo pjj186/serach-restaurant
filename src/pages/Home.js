@@ -28,7 +28,7 @@ const Home = () => {
             openModal("한식");
           }}
         >
-          <div className=" w-16 h-16 bg-slate-500 rounded-lg mb-2" />
+          <div className=" w-16 h-16 bg-[url('/images/kimbab.png')] rounded-lg mb-2" />
           <span className=" text-white">한식</span>
         </div>
         <div
@@ -37,7 +37,7 @@ const Home = () => {
             openModal("중식");
           }}
         >
-          <div className=" w-16 h-16 bg-slate-500 rounded-lg mb-2" />
+          <div className=" w-16 h-16 bg-[url('/images/zajang.png')] rounded-lg mb-2" />
           <span className="text-white">중식</span>
         </div>
         <div
@@ -46,7 +46,7 @@ const Home = () => {
             openModal("일식");
           }}
         >
-          <div className=" w-16 h-16 bg-slate-500 rounded-lg mb-2" />
+          <div className=" w-16 h-16 bg-[url('/images/sushi.png')] rounded-lg mb-2" />
           <span className="text-white">일식</span>
         </div>
         <div
@@ -55,7 +55,7 @@ const Home = () => {
             openModal("양식");
           }}
         >
-          <div className=" w-16 h-16 bg-slate-500 rounded-lg mb-2" />
+          <div className=" w-16 h-16 bg-[url('/images/burger.png')] rounded-lg mb-2" />
           <span className="text-white">양식</span>
         </div>
       </div>
