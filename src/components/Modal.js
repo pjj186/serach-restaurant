@@ -28,7 +28,7 @@ const Modal = ({ cancelModal, category }) => {
   useEffect(() => {}, [isResult]);
 
   return (
-    <ModalContainer className="w-full h-screen p-20 absolute flex items-center justify-center">
+    <ModalContainer className="w-full h-screen p-20 absolute -top-5 flex items-center justify-center">
       <div className=" bg-neutral-200 w-1/2 h-full rounded-lg">
         <MiniHeader cancelModal={cancelModal} category={category} />
         {!isResult ? (
@@ -41,14 +41,16 @@ const Modal = ({ cancelModal, category }) => {
                 <Location category={category} />
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <span
-                className="text-3xl border-2 border-solid mt-24 px-4 py-2 rounded-lg cursor-pointer shadow-lg hover:bg-slate-300"
-                onClick={pickRes}
-              >
-                식당 뽑기!
-              </span>
-            </div>
+            {!locContext.loading ? (
+              <div className="flex items-center justify-center">
+                <span
+                  className="text-3xl border-2 border-solid mt-24 px-4 py-2 rounded-lg cursor-pointer shadow-lg hover:bg-slate-300"
+                  onClick={pickRes}
+                >
+                  식당 뽑기!
+                </span>
+              </div>
+            ) : null}
           </div>
         ) : (
           <div>

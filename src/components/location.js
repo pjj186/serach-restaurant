@@ -97,7 +97,9 @@ const Location = ({ category }) => {
           <div id="map" style={{ width: "500px", height: "400px" }}></div>
         </div>
       ) : (
-        <div>Loading..</div>
+        <div className="w-[500px] h-[408px] flex items-center justify-center">
+          <span className=" text-2xl">Loading..</span>
+        </div>
       )}
     </>
   );
