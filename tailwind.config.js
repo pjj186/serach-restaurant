@@ -7,6 +7,7 @@ module.exports = {
         zajang: "url('/images/zajang.png')",
         burger: "url('/images/steak.png')",
         sushi: "url('/images/sushi.png')",
+        qmark: "url('/images/coffee.png)",
       },
     },
   },

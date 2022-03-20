@@ -58,6 +58,15 @@ const Home = () => {
           <div className=" w-16 h-16 bg-[url('/images/steak.png')] rounded-lg mb-2" />
           <span className="text-white">양식</span>
         </div>
+        <div
+          className="flex flex-col items-center w-14 cursor-pointer"
+          onClick={() => {
+            openModal("음식점");
+          }}
+        >
+          <div className=" w-16 h-16 bg-[url('/images/coffee.png')] rounded-lg mb-2" />
+          <span className="text-white">다 좋아</span>
+        </div>
       </div>
     </>
   );

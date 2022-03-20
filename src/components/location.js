@@ -55,6 +55,7 @@ const Location = ({ category }) => {
         if (status === kakao.maps.services.Status.OK) {
           for (var i = 0; i < data.length; i++) {
             if (data[i].category_name.includes(category)) {
+              // 카테고리에 해당하는 음식점
               resArr.push(data[i]);
               displayMarker(data[i]);
             }
