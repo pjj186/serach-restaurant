@@ -16,6 +16,7 @@ const geolocationOptions = {
 const App = () => {
   const [location, setLocation] = useState();
   const [loading, setLoading] = useState(true);
+  const [currArr, setCurrArr] = useState([]);
   const { location: currentLocation, error: currentError } =
     useCurrentLocation(geolocationOptions);
 
@@ -31,7 +32,7 @@ const App = () => {
 
   return (
     <>
-      <AppContext.Provider value={{ location, loading }}>
+      <AppContext.Provider value={{ location, loading, currArr, setCurrArr }}>
         <GlobalStyles />
         <HashRouter>
           <Header />

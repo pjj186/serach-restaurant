@@ -2,10 +2,19 @@
 import React, { useEffect, useContext } from "react";
 import { AppContext } from "../App";
 
+let resArr = [];
+
 const Location = ({ category }) => {
   const locContext = useContext(AppContext);
-  //   console.log(locContext.location.latitude);
-  //   console.log(locContext.location.longitude);
+
+  const getResArr = (arr) => {
+    locContext.setCurrArr(arr);
+  };
+
+  const resetResArr = () => {
+    resArr = [];
+  };
+
   console.log(locContext);
   useEffect(() => {
     if (!locContext.loading) {
@@ -46,9 +55,12 @@ const Location = ({ category }) => {
         if (status === kakao.maps.services.Status.OK) {
           for (var i = 0; i < data.length; i++) {
             if (data[i].category_name.includes(category)) {
+              resArr.push(data[i]);
               displayMarker(data[i]);
             }
           }
+          getResArr(resArr);
+          resetResArr();
         }
       }
 
