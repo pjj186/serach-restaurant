@@ -3,6 +3,7 @@ import { AppContext } from "../App";
 import styled from "styled-components";
 import MiniHeader from "./MiniHeader";
 import Location from "./location";
+import ResultLocation from "./ResultLocation";
 
 const ModalContainer = styled.div`
   background-color: rgba(15, 118, 110, 0.4);
@@ -17,6 +18,7 @@ const Modal = ({ cancelModal, category }) => {
     let pickIndex = Math.floor(Math.random() * locContext.currArr.length);
     setRes(locContext.currArr[pickIndex]);
     setIsResult(true);
+    console.log(res);
   };
 
   const resetBtn = () => {
@@ -54,8 +56,11 @@ const Modal = ({ cancelModal, category }) => {
               <p className=" text-3xl mt-3 mb-3 text-center">
                 여길 가보는건 어떠세요?
               </p>
-              <div className="">
-                <span>{res.place_name}</span>
+              <div className="flex flex-col justify-center items-center pb-10 border-b-2 border-dashed">
+                <ResultLocation res={res.road_address_name} />
+                <span className="mt-4 font-bold text-3xl text-gray-900">
+                  {res.place_name}
+                </span>
               </div>
             </div>
             <div className="flex items-center justify-center">
