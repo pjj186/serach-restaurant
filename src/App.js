@@ -4,6 +4,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import React, { useEffect, useState } from "react";
 import useCurrentLocation from "./hooks/useCurrentLocation";
+import Footer from "./components/Footer";
 
 export const AppContext = React.createContext();
 
@@ -39,6 +40,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />}></Route>
           </Routes>
+          <Footer />
         </HashRouter>
       </AppContext.Provider>
     </>
