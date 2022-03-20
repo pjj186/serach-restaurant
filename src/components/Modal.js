@@ -55,9 +55,7 @@ const Modal = ({ cancelModal, category }) => {
         ) : (
           <div>
             <div>
-              <p className=" text-3xl mt-3 mb-3 text-center">
-                여길 가보는건 어떠세요?
-              </p>
+              <p className=" text-3xl mt-3 mb-3 text-center">여긴 어때요?</p>
               <div className="flex flex-col justify-center items-center pb-10 border-b-2 border-dashed">
                 <ResultLocation res={res.road_address_name} />
                 <span className="mt-4 font-bold text-3xl text-gray-900">
