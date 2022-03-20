@@ -17,7 +17,7 @@ const Modal = ({ cancelModal, category }) => {
             주변에 이런 식당들이 있어요!
           </p>
           <div className="flex justify-center items-center pb-10 border-b-2 border-dashed">
-            <Location />
+            <Location category={category} />
           </div>
         </div>
         <div className="flex items-center justify-center">

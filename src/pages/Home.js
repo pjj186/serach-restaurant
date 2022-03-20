@@ -55,7 +55,7 @@ const Home = () => {
             openModal("양식");
           }}
         >
-          <div className=" w-16 h-16 bg-[url('/images/burger.png')] rounded-lg mb-2" />
+          <div className=" w-16 h-16 bg-[url('/images/steak.png')] rounded-lg mb-2" />
           <span className="text-white">양식</span>
         </div>
       </div>
