@@ -5,7 +5,6 @@ import { AppContext } from "../App";
 const ResultLocation = ({ res }) => {
   const locContext = useContext(AppContext);
 
-  console.log(locContext);
   useEffect(() => {
     if (!locContext.loading) {
       var container = document.getElementById("map");

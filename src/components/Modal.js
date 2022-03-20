@@ -57,10 +57,18 @@ const Modal = ({ cancelModal, category }) => {
             <div>
               <p className=" text-3xl mt-3 mb-3 text-center">여긴 어때요?</p>
               <div className="flex flex-col justify-center items-center pb-10 border-b-2 border-dashed">
-                <ResultLocation res={res.road_address_name} />
-                <span className="mt-4 font-bold text-3xl text-gray-900">
-                  {res.place_name}
-                </span>
+                {res === undefined ? (
+                  <div className="w-[500px] h-[408px] flex items-center justify-center">
+                    <span>검색된 식당이 없어요.. 다른 식당을 찾아봐요!</span>
+                  </div>
+                ) : (
+                  <>
+                    <ResultLocation res={res.road_address_name} />
+                    <span className="mt-4 font-bold text-3xl text-gray-900">
+                      {res.place_name}
+                    </span>
+                  </>
+                )}
               </div>
             </div>
             <div className="flex items-center justify-center">
