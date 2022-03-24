@@ -25,7 +25,7 @@ const Location = ({ category }) => {
           locContext.location.latitude,
           locContext.location.longitude
         ), // 현재위치
-        level: 4,
+        level: 3,
       };
 
       var imageSrc =
