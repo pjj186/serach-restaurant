@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/serach-restaurant/static/css/main.e0681643.css",
-    "main.js": "/serach-restaurant/static/js/main.a9907f35.js",
+    "main.js": "/serach-restaurant/static/js/main.3aa23cec.js",
     "static/media/DungGeunMo.woff": "/serach-restaurant/static/media/DungGeunMo.5c219fe051e35f89875f.woff",
     "index.html": "/serach-restaurant/index.html",
     "main.e0681643.css.map": "/serach-restaurant/static/css/main.e0681643.css.map",
-    "main.a9907f35.js.map": "/serach-restaurant/static/js/main.a9907f35.js.map"
+    "main.3aa23cec.js.map": "/serach-restaurant/static/js/main.3aa23cec.js.map"
   },
   "entrypoints": [
     "static/css/main.e0681643.css",
-    "static/js/main.a9907f35.js"
+    "static/js/main.3aa23cec.js"
   ]
 }
